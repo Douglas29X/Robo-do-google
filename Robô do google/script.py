@@ -53,7 +53,7 @@ with open("Relatório.csv", mode="w") as arquivo:
 			link = div.find_element_by_tag_name("a")
 			resultado = f"**************\n{nome.text};{link.get_attribute('href')}\n"
 			arquivo.write(resultado)
-		print(f"Página {pagina_atual} processada")
+		print(f"Página {pagina_atual + 1} processada")
 
 		pagina_atual += 1
 
